@@ -68,7 +68,6 @@ footer {
     color: white;
     padding: 15px;
     border-radius: 0px;
-    margin-top: 500px;
 }
 
 .footer-bottom {
@@ -77,6 +76,25 @@ footer {
     color: white;
     padding: 15px;
     border-radius: 0px;
-    margin-top: 500px;
+}
+
+nav { 
+ margin-left: auto;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav a {
+text-decoration: none;
+align-items: right;
+color: white;
 }
 
