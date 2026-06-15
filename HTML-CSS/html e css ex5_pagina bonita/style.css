@@ -149,7 +149,7 @@ textarea {
 }
 
 .logo img {
-     display: block;
+  display: block;
   margin: 0 auto; /* centraliza a imagem */
   width: 300px;  /* tamanho da logo */
   height: 250px;
