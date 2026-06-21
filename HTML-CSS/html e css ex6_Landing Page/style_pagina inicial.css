@@ -1,16 +1,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url("imagem_hamburgueria/hamburguer suculento.png");
+  background-color: black;
   background-attachment:fixed;
   align-items: center;
   background-size: cover;
   background-position: center;
 }
 
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .container-pai {
     display: flex;
-    gap: 20px; /* espaço entre os containers */
+    gap: 20px;
 }
 
 .container {
@@ -37,11 +43,36 @@ body {
 .cabecalho1 img {
   width: 150px ;
   height: 150px ;
+  
+}
+.cabecalho1 nav a:hover{
+    color: darkorange;
+    transition: 0.3s;
+}
+
+nav { 
+ margin-left: auto;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav a {
+text-decoration: none;
+align-items: right;
+color: white;
 }
 
 .cabecalho2 {
-  height: 90vh;
-  width: 220vh;
+  height: 100vh;
+  width: 100%;
   background-color: black;
   background-image: url("imagem_hamburgueria/hamburguer suculento.png");
   background-repeat: no-repeat;
@@ -124,25 +155,6 @@ footer {
     border-radius: 0px;
 }
 
-nav { 
- margin-left: auto;
-
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-nav a {
-text-decoration: none;
-align-items: right;
-color: white;
-}
 
 .rodape {
     background-color: #0a0a0a;
@@ -169,6 +181,7 @@ color: white;
 .coluna p {
     margin: 10px 0;
     font-size: 20px;
+    
 }
 
 .coluna a {
@@ -177,6 +190,13 @@ color: white;
 }
 .i i{
     color: darkorange;
+}
+
+.i p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
 .logo-centro {
@@ -209,8 +229,22 @@ color: white;
     cursor: pointer;
 }
 
-img {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
+/* Deixa o codigo responsivo */
+
+/* Quando a tela for maior que 768px (px=pixels)
+viram 2 colunas (tablet)*/
+
+@media(min-width:768px){
+    .contender{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Quando a tela for maior que 1024px (px=pixels)
+viram 3 colunas (desktop)*/
+
+@media(min-width:1024px){
+    .contender{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
