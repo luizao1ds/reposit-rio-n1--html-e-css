@@ -126,8 +126,8 @@ color: white;
   text-decoration: none;
   text-align: center;
   padding: 10px 0;
- font-size: 1.2rem;
- font-family: 'Geneva',  sans-serif;
+  font-size: 1.2rem;
+  font-family: 'Geneva',  sans-serif;
 }
 
 .btn:hover {
